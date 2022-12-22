@@ -339,7 +339,7 @@ endif
 	chown -R $(shell id -u) *                 || echo
 	bash -c "scripts/pyinbash.sh"
 
-	pushd $(PWD)/scripts > /dev/null; for string in *; do sudo chmod -R o+rwx /usr/local/bin/$$string; done; popd  2>/dev/null || echo
+	#pushd $(PWD)/scripts > /dev/null; for string in *; do sudo chmod -R o+rwx /usr/local/bin/$$string; done; popd  2>/dev/null || echo
 
 .PHONY: build
 build: init
